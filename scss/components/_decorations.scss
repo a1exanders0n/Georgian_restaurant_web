@@ -1,0 +1,114 @@
+.tomato {
+  position: absolute;
+  top: 1%;
+  left: -20%;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+  @media screen and (max-width: $mobile) {
+    top: 0px;
+    img {
+      width: 75%;
+    }
+  }
+}
+
+.tomato-small {
+  position: absolute;
+  bottom: -20%;
+  left: -5%;
+  img {
+    width: 30%;
+    object-fit: contain;
+  }
+  @media screen and (max-width: $tablet) {
+    bottom: 14%;
+    left: 14%;
+    top: auto;
+    img {
+      width: 20%;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    // bottom: 34%;
+    // top: auto;
+    img {
+      width: 50%;
+    }
+  }
+}
+
+.basil-big {
+  position: absolute;
+  top: 100px;
+  right: -300px;
+  width: 50%;
+  @media screen and (max-width: $mobile) {
+    width: 75%;
+    bottom: 260px;
+    top: auto;
+    right: -140px;
+  }
+}
+
+.basil-big-del-1 {
+  position: absolute;
+  top: -10%;
+  left: -20%;
+  width: 40%;
+  @media screen and (max-width: $tablet) {
+    top: 1%;
+    left: -20%;
+    bottom: auto;
+  }
+  @media screen and (max-width: $mobile) {
+    top: 1%;
+    left: -20%;
+    bottom: auto;
+  }
+}
+
+.basil-big-del-2 {
+  position: absolute;
+  bottom: -35%;
+  right: -20%;
+  width: 30%;
+
+  @media screen and (max-width: $tablet) {
+    bottom: -15%;
+    right: -10%;
+    top: auto;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 50%;
+    bottom: 30%;
+    right: -20%;
+    top: auto;
+  }
+}
+
+.basil-small {
+  position: absolute;
+  width: 204px;
+  top: -60px;
+  left: -60px;
+  transform: rotate(220deg);
+  @media screen and (max-width: $mobile) {
+    left: 120px;
+  }
+}
+
+.onions {
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  filter: blur(7px);
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}

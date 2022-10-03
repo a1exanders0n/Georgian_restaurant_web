@@ -1,1 +1,372 @@
-!
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Georgian restaurant</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+  </head>
+  <body>
+    <!--hero page -->
+    <div class="hero-page">
+      <!-- header  -->
+      <header class="header wrapper">
+        <!-- logo -->
+        <div class="header__logo">
+          <img src="img/logo.png" alt="logo" />
+        </div>
+        <!-- menu -->
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link">головна</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">меню</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">доставка</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">контакти</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">акції</a>
+          </li>
+        </ul>
+        <!-- social networks -->
+        <div class="social-networks">
+          <a href="#" class="social-networks__item">
+            <span class="social-networks__icon">
+              <img src="img/social/phone.svg" alt="phone" />
+            </span>
+            <span class="social-networks__text">+38 (050) 123 45 67</span>
+          </a>
+          <a href="#" class="social-networks__item">
+            <span class="social-networks__icon">
+              <img src="img/social/instagram.svg" alt="instagram" />
+            </span>
+          </a>
+          <a href="#" class="social-networks__item">
+            <span class="social-networks__icon">
+              <img src="img/social/facebook.svg" alt="facebook" />
+            </span>
+          </a>
+          <a href="#" class="social-networks__item">
+            <span class="social-networks__icon">
+              <img src="img/social/twitter.svg" alt="twitter" />
+            </span>
+          </a>
+        </div>
+        <!-- burger-menu -->
+        <div class="burger-menu">
+          <div
+            class="burger-menu__wrapper"
+            onclick="$('.burger-menu').toggleClass('active')"
+          >
+            <span class="burger-menu__item"></span>
+            <span class="burger-menu__item"></span>
+            <span class="burger-menu__item"></span>
+          </div>
+          <div class="burger-menu__content">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link">головна</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">меню</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">доставка</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">контакти</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">акції</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="hero-page__content wrapper">
+        <h1 class="hero-page__title">
+          Спробуй кращу
+          <span>грузинську</span> кухню в Києві.
+        </h1>
+        <p class="hero-page__text">
+          В нашому ресторані Ви знайдете кращі страви зроблені за старовинними
+          рецептами грузинської кухні. Вражаючий смак страв перенесе Вас в
+          атмосферу неймовірного Тбілиссі не виходячи з дому.
+        </p>
+        <button class="btn btn--red">Перейти до Меню</button>
+      </div>
+    </div>
+
+    <!-- recomended -->
+    <div class="taste-smak">
+      <div class="recommended wrapper">
+        <div class="tomato"><img src="img/tomato.png" alt="" /></div>
+        <img class="basil-big" src="img/basil.png" alt="" />
+
+        <div class="section-header">
+          <h2 class="section-header__title">Спробуйте на смак</h2>
+          <div class="section-header__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            pretium netus urna hendrerit convallis aliquam consequat turpis.
+          </div>
+        </div>
+        <div class="recommended-items--wrapper">
+          <div class="recommended-item">
+            <img class="basil-small" src="img/basil.png" alt="" />
+            <img
+              class="recommended-item-pic"
+              src="img/recommended/pic-1.png"
+              alt="dish 1"
+            />
+            <p class="description-text">
+              Тут буде якийсь текст. Можливо, назва страви
+            </p>
+          </div>
+          <div class="recommended-item">
+            <img
+              class="recommended-item-pic"
+              src="img/recommended/pic-2.png"
+              alt="dish 1"
+            />
+            <p class="description-text">
+              Тут буде якийсь текст. Можливо, назва страви
+            </p>
+          </div>
+          <div class="recommended-item">
+            <img
+              class="recommended-item-pic"
+              src="img/recommended/pic-3.png"
+              alt="dish 1"
+            />
+            <p class="description-text">
+              Тут буде якийсь текст. Можливо, назва страви
+            </p>
+          </div>
+        </div>
+        <button class="btn btn--red">Перейти до доставки</button>
+      </div>
+    </div>
+
+    <!-- menu-carousel -->
+    <div class="menu-carousel">
+      <div class="onions"><img src="img/onions.png" alt="onions" /></div>
+
+      <div class="section-header">
+        <h2 class="section-header__title">Меню</h2>
+        <div class="section-header__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          pretium netus urna hendrerit convallis aliquam consequat turpis.
+        </div>
+      </div>
+
+      <div class="carousel">
+        <!-- carousel -->
+        <div class="carousel__item">
+          <img src="/img/food-menu/salad.png" alt="salad" />
+          <button class="btn btn--transparent">Відкрити Меню</button>
+          <h3 class="carousel__item--label">Салати</h3>
+        </div>
+
+        <div class="carousel__item">
+          <img src="/img/food-menu/pastry.png" alt="pastry" />
+          <button class="btn btn--transparent">Відкрити Меню</button>
+          <h3 class="carousel__item--label">Випічка</h3>
+        </div>
+
+        <div class="carousel__item">
+          <img src="/img/food-menu/soup.png" alt="soup" />
+          <button class="btn btn--transparent">Відкрити Меню</button>
+          <h3 class="carousel__item--label">Супи</h3>
+        </div>
+
+        <div class="carousel__item">
+          <img src="/img/food-menu/mangal.png" alt="mangal" />
+          <button class="btn btn--transparent">Відкрити Меню</button>
+          <h3 class="carousel__item--label">З мангалу</h3>
+        </div>
+
+        <div class="carousel__item">
+          <img src="/img/food-menu/hot.png" alt="hot" />
+          <button class="btn btn--transparent">Відкрити Меню</button>
+          <h3 class="carousel__item--label">Гаряче</h3>
+        </div>
+
+        <div class="carousel__item">
+          <img src="/img/food-menu/sauces.png" alt="sauces" />
+          <button class="btn btn--transparent">Відкрити Меню</button>
+          <h3 class="carousel__item--label">Соуси</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- delivery -->
+
+    <section class="delivery-section">
+
+
+      <div class="delivery wrapper">
+        <img class="basil-big-del-1" src="img/basil.png" alt="" />
+        <img class="basil-big-del-2" src="img/basil.png" alt="" />
+        <div class="tomato-small"><img src="img/tomato.png" alt="" /></div>
+
+        <div class="section-header">
+          <h2 class="section-header__title">Зручні способи доставки</h2>
+          <div class="section-header__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            pretium netus urna hendrerit convallis aliquam consequat turpis.
+          </div>
+        </div>
+
+        <div class="delivery__wrapper">
+          <div class="courier__wrapper">
+            <div class="courier">
+              <img src="img/delivery/del1.png" alt="delivery logo" />
+              <div class="courier__description">
+                Доставка за допомогою наших кур'єрів при замовленні від 2000 грн
+              </div>
+            </div>
+
+            <div class="courier">
+              <img src="img/delivery/del2.png" alt="delivery logo" />
+              <div class="courier__description">
+                Доставка за допомогою сервісу з доставки їжі та далі за текстом
+              </div>
+            </div>
+
+            <div class="courier">
+              <img src="img/delivery/del3.png" alt="delivery logo" />
+              <div class="courier__description">
+                Доставка за допомогою сервісу з доставки їжі та далі за текстом
+              </div>
+            </div>
+          </div>
+
+          <div class="delivery-img">
+            <img src="img/delivery-img.jpg" alt=" delivery image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- galery -->
+    <section class="gallery">
+      <div class="gallery__item">
+        <img src="img/gallery/gal1.jpg" alt="gallery-item" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/gallery/gal2.jpg" alt="gallery-item" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/gallery/gal3.jpg" alt="gallery-item" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/gallery/gal4.jpg" alt="gallery-item" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/gallery/gal5.jpg" alt="gallery-item" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/gallery/gal6.jpg" alt="gallery-item" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/gallery/gal7.jpg" alt="gallery-item" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/gallery/gal8.jpg" alt="gallery-item" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__contacts wrapper">
+        <div class="header__logo">
+          <img src="img/logo.png" alt="logo" />
+        </div>
+        <div class="social-networks">
+          <span class="social-networks__phone-number">+38 (050) 456-99-98</span>
+          <a href="#" class="social-networks__item">
+            <span class="social-networks__icon">
+              <img src="img/footer/telegram.svg" alt="telegram" />
+            </span>
+          </a>
+          <a href="#" class="social-networks__item">
+            <span class="social-networks__icon">
+              <img src="img/footer/viber-mob.svg" alt="viber" />
+            </span>
+          </a>
+          <a href="#" class="social-networks__item">
+            <span class="social-networks__icon">
+              <img src="img/footer/whatsapp-mob.svg" alt="whatsapp" />
+            </span>
+          </a>
+        </div>
+        <a href="#">м. Київ, район стадіону Динамо</a>
+        <a href="#">Email: mail@mal.ru</a>
+      </div>
+      <div class="footer__nda wrapper">
+        <div class="links-wrapper">
+          <a href="#">Політика конфіденційності</a>
+          <a href="#">Згода користувача</a>
+        </div>
+        <span>Динамо. Грузинське бістро. Всі права захищені, 2021</span>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

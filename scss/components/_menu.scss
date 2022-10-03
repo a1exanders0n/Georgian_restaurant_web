@@ -1,0 +1,22 @@
+.menu {
+  @include flex(row, center, center);
+
+  list-style-type: none;
+  gap: 60px;
+
+  @media screen and (max-width: $tablet) {
+    gap: 20px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
+  &__link {
+    padding: 10px 30px;
+
+    @media screen and (max-width: $tablet) {
+      padding: 10px;
+    }
+  }
+}

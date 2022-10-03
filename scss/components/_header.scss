@@ -1,0 +1,6 @@
+.header {
+  @include flex(row, space-between, center);
+  padding-top: 15px;
+  position: relative;
+  z-index: 2;
+}

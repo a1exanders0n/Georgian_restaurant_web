@@ -1,0 +1,46 @@
+@mixin d-flex-a-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin section-header {
+  @include d-flex-a-center;
+  flex-direction: column;
+
+
+  &__title {
+    font-weight: 900;
+    font-size: 48px;
+    color: $color-white;
+    text-align: center;
+    margin-bottom: 25px;
+
+  }
+  &__subtitle {
+    font-weight: 400;
+    text-align: center;
+    color: $color-white;
+    max-width: 632px;
+  }
+  @media screen and (max-width: $mobile) {
+    &__title {
+      font-size: 28px;
+    }
+    &__subtitle {
+      max-width: 355px;
+    }
+  }
+}
+
+@mixin description-text {
+  font-weight: 700;
+  font-size: 18px;
+  color: $color-white;
+}
+
+@mixin flex($dir, $jc, $ai) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jc;
+  align-items: $ai;
+}

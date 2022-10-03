@@ -1,0 +1,67 @@
+.hero-page {
+  background-image: url('../img/hero-page-bg.png');
+  height: 100vh;
+  color: $color-white;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: $mobile) {
+    background-position-x: 83%;
+  }
+
+  &::after {
+    content: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    @media screen and (max-width: $mobile) {
+      content: '';
+    }
+  }
+
+  &__content {
+    @include flex(column, center, flex-start);
+
+    height: calc(100% - $header-height);
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: $mobile) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    max-width: 610px;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 70px;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+
+    span {
+      color: $color-red;
+    }
+  }
+
+  &__text {
+    max-width: 500px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 35px;
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.social-networks {
+  @include flex(row, center, center);
+  gap: 15px;
+
+  &__item {
+    @include flex(row, center, center);
+    gap: 5px;
+  }
+
+  &__icon {
+    @include flex(row, center, center);
+  }
+
+  &__text {
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
+  }
+}
+
+.social-networks__text {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
